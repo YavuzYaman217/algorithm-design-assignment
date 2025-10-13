@@ -1,0 +1,46 @@
+# test_cases.txt - prime_finder fonksiyonu icin test verileri
+
+[TEST1]
+description = No primes below 2
+input = 1
+expected = []
+
+[TEST2]
+description = Single prime - 2
+input = 2
+expected = [2]
+
+[TEST3]
+description = Two primes
+input = 3
+expected = [2, 3]
+
+[TEST4]
+description = Primes up to 10
+input = 10
+expected = [2, 3, 5, 7]
+
+[TEST5]
+description = Primes up to 20
+input = 20
+expected = [2, 3, 5, 7, 11, 13, 17, 19]
+
+[TEST6]
+description = Primes up to 30
+input = 30
+expected = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+
+[TEST7]
+description = Negative input
+input = -5
+expected = []
+
+[TEST8]
+description = Zero
+input = 0
+expected = []
+
+[TEST9]
+description = Large input - primes up to 50
+input = 50
+expected = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]

@@ -1,0 +1,56 @@
+# test_cases.txt - nearest_square fonksiyonu icin test verileri
+
+[TEST1]
+description = Perfect square - 1
+input = 1
+expected = 1
+
+[TEST2]
+description = Perfect square - 4
+input = 4
+expected = 4
+
+[TEST3]
+description = Perfect square - 9
+input = 9
+expected = 9
+
+[TEST4]
+description = Between squares - closer to 4
+input = 5
+expected = 4
+
+[TEST5]
+description = Between squares - closer to 9
+input = 8
+expected = 9
+
+[TEST6]
+description = Exactly middle - should return smaller
+input = 6
+expected = 4
+
+[TEST7]
+description = Exactly middle - 12 between 9 and 16
+input = 12
+expected = 9
+
+[TEST8]
+description = Negative number
+input = -1
+expected = 0
+
+[TEST9]
+description = Zero
+input = 0
+expected = 0
+
+[TEST10]
+description = Large perfect square
+input = 100
+expected = 100
+
+[TEST11]
+description = Large number - closer to 100
+input = 101
+expected = 100

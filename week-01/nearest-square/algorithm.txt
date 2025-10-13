@@ -1,0 +1,10 @@
+Algorithm: Finding the Nearest Perfect Square
+Step 1: Input
+Take a positive integer N from the user.
+Step 2: Calculate Square Root
+Compute sqrt_N = √N.
+Step 3: Find Boundary Squares
+Determine the two perfect squares around N: lower = floor(sqrt_N)² and upper = ceiling(sqrt_N)².
+Step 4: Determine Nearest Square
+Calculate the midpoint: mid = (lower + upper) / 2. If N > mid, the nearest square is upper. Otherwise, the nearest square is lower.
+

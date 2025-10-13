@@ -1,0 +1,7 @@
+Algorithm: Finding Prime Numbers up to N
+Step 1: Setup
+Take a positive integer N as the upper limit. Create an empty list prime_numbers.
+Step 2: Check Each Number
+For each number i from 2 to N: Calculate limit = √i (integer part). Check if i is divisible by any number j from 2 to limit: If i % j == 0, then i is not prime. Move to the next number. If no divisor is found, i is prime. Add it to prime_numbers.
+Step 3: Result
+The prime_numbers list contains all primes between 2 and N.
