@@ -1,0 +1,9 @@
+Algorithm: Newton's Method for Finding Roots
+Step 1: Input
+Take function f(x), its derivative f'(x), initial guess x₀, and number of iterations n.
+Step 2: Initialize
+Set x = x₀ (initial guess).
+Step 3: Iterate
+For i from 1 to n: calculate x = x - f(x)/f'(x).
+Step 4: Output
+Return the approximated root after n iterations.
