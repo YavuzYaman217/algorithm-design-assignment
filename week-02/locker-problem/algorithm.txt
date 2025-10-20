@@ -1,0 +1,7 @@
+Algorithm: Locker Problem - Finding Open Lockers
+Step 1: Input
+Take the number of lockers N.
+Step 2: Brute Force Simulation (Slow)
+For each pass i from 1 to N, toggle every i-th locker. Return open lockers.
+Step 3: Mathematical Optimization (Fast)
+Only perfect squares remain open since they have odd number of divisors. Return all perfect squares ≤ N.

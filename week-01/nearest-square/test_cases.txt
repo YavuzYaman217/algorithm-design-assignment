@@ -1,5 +1,3 @@
-# test_cases.txt - nearest_square fonksiyonu icin test verileri
-
 [TEST1]
 description = Perfect square - 1
 input = 1

@@ -29,6 +29,15 @@ ENV/
 env/
 .venv
 
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+*.secret
+secrets.json
+credentials.json
+config.local.json
+
 # IDE
 .vscode/
 .idea/

@@ -1,0 +1,64 @@
+[TEST1]
+description = Single locker
+input = 1
+expected = [1]
+
+[TEST2]
+description = Two lockers
+input = 2
+expected = [1]
+
+[TEST3]
+description = Three lockers
+input = 3
+expected = [1]
+
+[TEST4]
+description = Four lockers - includes perfect square 4
+input = 4
+expected = [1, 4]
+
+[TEST5]
+description = Five lockers
+input = 5
+expected = [1, 4]
+
+[TEST6]
+description = Nine lockers - includes perfect squares 1, 4, 9
+input = 9
+expected = [1, 4, 9]
+
+[TEST7]
+description = Ten lockers
+input = 10
+expected = [1, 4, 9]
+
+[TEST8]
+description = Sixteen lockers - includes perfect squares 1, 4, 9, 16
+input = 16
+expected = [1, 4, 9, 16]
+
+[TEST9]
+description = Twenty-five lockers - all perfect squares up to 25
+input = 25
+expected = [1, 4, 9, 16, 25]
+
+[TEST10]
+description = Fifty lockers
+input = 50
+expected = [1, 4, 9, 16, 25, 36, 49]
+
+[TEST11]
+description = One hundred lockers - perfect squares up to 100
+input = 100
+expected = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+[TEST12]
+description = Large case - 500 lockers
+input = 500
+expected = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400, 441, 484]
+
+[TEST13]
+description = Very large case - 1000 lockers
+input = 1000
+expected = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400, 441, 484, 529, 576, 625, 676, 729, 784, 841, 900, 961]
