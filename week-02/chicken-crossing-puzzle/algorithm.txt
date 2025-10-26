@@ -1,0 +1,20 @@
+CHICKEN-FOX-CORN RIVER CROSSING PUZZLE
+
+Problem:
+A farmer transports chicken, fox, and corn across a river.
+Boat holds farmer + one item.
+Unsafe: chicken+fox alone OR chicken+corn alone.
+
+Algorithm:
+1. Initialize: river_left = ["chicken", "fox", "corn"], river_right = []
+2. Safety check: Convert list to sorted tuple, check against unsafe pairs
+3. Solution steps:
+   - Take chicken right
+   - Return alone
+   - Take fox right
+   - Bring chicken back (KEY STEP)
+   - Take corn right
+   - Return alone
+   - Take chicken right
+
+Complexity: O(1) time, O(1) space

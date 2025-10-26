@@ -1,0 +1,39 @@
+# Test Cases for Chicken Crossing Puzzle
+# Format: input | expected_output
+# Testing the is_safe function with different states
+
+# Test Case 1: Empty list (safe state)
+[] | True
+
+# Test Case 2: Single item (safe state)
+["chicken"] | True
+
+# Test Case 3: Single item - fox (safe state)
+["fox"] | True
+
+# Test Case 4: Single item - corn (safe state)
+["corn"] | True
+
+# Test Case 5: Chicken and fox together (unsafe state)
+["chicken", "fox"] | False
+
+# Test Case 6: Fox and chicken together - different order (unsafe state)
+["fox", "chicken"] | False
+
+# Test Case 7: Chicken and corn together (unsafe state)
+["chicken", "corn"] | False
+
+# Test Case 8: Corn and chicken together - different order (unsafe state)
+["corn", "chicken"] | False
+
+# Test Case 9: Fox and corn together (safe state)
+["fox", "corn"] | True
+
+# Test Case 10: Corn and fox together - different order (safe state)
+["corn", "fox"] | True
+
+# Test Case 11: All three items together (safe state - farmer present)
+["chicken", "fox", "corn"] | True
+
+# Test Case 12: Different order - all items (safe state)
+["fox", "corn", "chicken"] | True
