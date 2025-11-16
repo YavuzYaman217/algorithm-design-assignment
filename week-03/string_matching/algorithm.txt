@@ -1,0 +1,22 @@
+STRING MATCHING (BRUTE FORCE)
+
+Problem:
+Find pattern P in text T by checking all possible positions.
+
+Algorithm:
+1. Slide pattern over text from left to right
+2. At each position, compare pattern with text substring
+3. If all characters match, pattern found at that position
+4. Continue until all positions checked
+
+Steps:
+- Outer loop: i from 0 to n-m (n=text length, m=pattern length)
+- Inner loop: j from 0 to m-1
+- Compare T[i+j] with P[j]
+- If mismatch, break and try next position
+- If all match, record position i
+
+Complexity: O(n*m) time, O(1) space
+Best case: O(n) - mismatch at first character
+Worst case: O(n*m) - many partial matches
+Common in: text editors, DNA sequence analysis

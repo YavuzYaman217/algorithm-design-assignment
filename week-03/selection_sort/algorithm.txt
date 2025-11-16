@@ -1,0 +1,22 @@
+SELECTION SORT
+
+Problem:
+Sort an array by repeatedly finding minimum element and placing it at beginning.
+
+Algorithm:
+1. Divide array into sorted (left) and unsorted (right) portions
+2. Find minimum element in unsorted portion
+3. Swap with first element of unsorted portion
+4. Expand sorted portion by one
+5. Repeat until entire array is sorted
+
+Steps:
+- Outer loop: i from 0 to n-2
+- Set min = i
+- Inner loop: j from i+1 to n-1
+- Find index of minimum element in unsorted part
+- Swap A[i] with A[min]
+
+Complexity: O(n²) time, O(1) space
+Always O(n²) - no best/worst case difference
+Performs fewer swaps than bubble sort

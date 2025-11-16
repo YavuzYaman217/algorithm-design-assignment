@@ -63,3 +63,6 @@ htmlcov/
 # OS
 Thumbs.db
 .DS_Store
+
+#Files
+leet_code_solutions/

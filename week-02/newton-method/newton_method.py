@@ -29,6 +29,3 @@ if __name__ == "__main__":
         test_file="test_cases.txt"
     )
     wrapper.run_all_tests()
-    
-    # Original test call
-    newton_method("x**3 - x - 2","3*x**2 - 1",1.5,10)

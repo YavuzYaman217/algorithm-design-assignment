@@ -1,0 +1,21 @@
+SEQUENTIAL SEARCH (LINEAR SEARCH)
+
+Problem:
+Find the position of a target key in an array by checking each element sequentially.
+
+Algorithm:
+1. Start from first element of array
+2. Compare each element with key
+3. If match found, return index
+4. If end reached without match, return -1 or None
+
+Steps:
+- Loop through array from index 0 to n-1
+- Check if A[i] == key
+- If yes, return i
+- If loop completes, key not found
+
+Complexity: O(n) time, O(1) space
+Best case: O(1) - key is first element
+Worst case: O(n) - key is last or not present
+Average case: O(n/2) = O(n)

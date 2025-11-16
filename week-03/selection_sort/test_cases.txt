@@ -1,0 +1,42 @@
+# Test Cases for Selection Sort
+# Format: input | expected_output
+
+[TEST1]
+description = Already sorted array
+input = [1, 2, 3, 4, 5]
+expected = [1, 2, 3, 4, 5]
+
+[TEST2]
+description = Reverse sorted array
+input = [5, 4, 3, 2, 1]
+expected = [1, 2, 3, 4, 5]
+
+[TEST3]
+description = Random unsorted array
+input = [1, 5, 7, 9, -1, 0]
+expected = [-1, 0, 1, 5, 7, 9]
+
+[TEST4]
+description = Array with duplicates
+input = [3, 1, 4, 1, 5, 9, 2, 6, 5]
+expected = [1, 1, 2, 3, 4, 5, 5, 6, 9]
+
+[TEST5]
+description = Single element
+input = [42]
+expected = [42]
+
+[TEST6]
+description = Two elements
+input = [2, 1]
+expected = [1, 2]
+
+[TEST7]
+description = All same elements
+input = [5, 5, 5, 5]
+expected = [5, 5, 5, 5]
+
+[TEST8]
+description = Mixed positive and negative
+input = [10, -5, 3, 0, -2, 8]
+expected = [-5, -2, 0, 3, 8, 10]

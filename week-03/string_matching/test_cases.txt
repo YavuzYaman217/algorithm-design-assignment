@@ -1,0 +1,52 @@
+# Test Cases for String Matching
+# Format: text, pattern | expected_output (list of indices)
+
+[TEST1]
+description = Single occurrence in middle
+input = ["thereisacathere", "cat"]
+expected = [8]
+
+[TEST2]
+description = Pattern at beginning
+input = ["helloworld", "hello"]
+expected = [0]
+
+[TEST3]
+description = Pattern at end
+input = ["helloworld", "world"]
+expected = [5]
+
+[TEST4]
+description = Pattern not found
+input = ["thereisacathere", "dog"]
+expected = []
+
+[TEST5]
+description = Multiple occurrences
+input = ["ababababab", "ab"]
+expected = [0, 2, 4, 6, 8]
+
+[TEST6]
+description = Overlapping pattern
+input = ["aaaa", "aa"]
+expected = [0, 1, 2]
+
+[TEST7]
+description = Pattern equals text
+input = ["hello", "hello"]
+expected = [0]
+
+[TEST8]
+description = Single character pattern
+input = ["abcabc", "c"]
+expected = [2, 5]
+
+[TEST9]
+description = Pattern longer than text
+input = ["hi", "hello"]
+expected = []
+
+[TEST10]
+description = Empty pattern
+input = ["hello", ""]
+expected = []
