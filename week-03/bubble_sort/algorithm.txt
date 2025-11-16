@@ -1,0 +1,21 @@
+BUBBLE SORT
+
+Problem:
+Sort an array in ascending order by repeatedly swapping adjacent elements.
+
+Algorithm:
+1. Iterate through array n times (outer loop)
+2. In each pass, compare adjacent elements
+3. Swap if left element > right element
+4. After each pass, largest unsorted element "bubbles" to end
+5. Reduce comparison range by i in each iteration
+
+Steps:
+- Outer loop: i from 0 to n-1
+- Inner loop: j from 0 to n-i-2
+- Compare A[j] and A[j+1]
+- Swap if A[j] > A[j+1]
+
+Complexity: O(n²) time, O(1) space
+Best case: O(n) with optimization
+Worst case: O(n²) - reversed array
