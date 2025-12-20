@@ -1,0 +1,25 @@
+Naive Polynomial Evaluation Algorithm
+=======================================
+
+Description:
+This algorithm evaluates a polynomial at a given value of x using the naive approach. Given a polynomial represented as an array of coefficients [a₀, a₁, a₂, ..., aₙ], it computes P(x) = a₀ + a₁x + a₂x² + ... + aₙxⁿ by calculating each power of x separately. While straightforward, this method is inefficient compared to Horner's method.
+
+Time Complexity: O(n²) - nested loops for power calculation
+Space Complexity: O(1)
+
+Algorithm Steps:
+1. Initialize result p with the constant term (poly[0])
+2. For each coefficient from index 1 to n:
+   - Calculate power = x^i by multiplying x (i-1) times
+   - Add poly[i] * power to p
+3. Return p
+
+Example: Evaluate [1, 2, 3] at x = 2
+P(x) = 1 + 2x + 3x²
+P(2) = 1 + 2(2) + 3(2²)
+     = 1 + 4 + 12
+     = 17
+
+Note: The current implementation has a bug - the inner loop should be:
+for j in range(i): power = power * x
+(not range(1, i))

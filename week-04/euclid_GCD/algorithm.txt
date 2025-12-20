@@ -1,0 +1,24 @@
+Euclidean Algorithm for GCD
+=============================
+
+Description:
+The Euclidean algorithm is an efficient method for computing the greatest common divisor (GCD) of two integers. It is based on the principle that the GCD of two numbers also divides their difference. The algorithm repeatedly replaces the larger number with the remainder of the division of the larger by the smaller number until one of the numbers becomes zero.
+
+Time Complexity: O(log min(a, b))
+Space Complexity: O(1)
+
+Algorithm Steps:
+1. Start with two integers a and b
+2. While b is not zero:
+   - Calculate r = a mod b (remainder)
+   - Set a = b
+   - Set b = r
+3. When b becomes 0, a contains the GCD
+4. Return a
+
+Example: GCD(12, 7)
+Step 1: a=12, b=7, r=12%7=5
+Step 2: a=7, b=5, r=7%5=2
+Step 3: a=5, b=2, r=5%2=1
+Step 4: a=2, b=1, r=2%1=0
+Step 5: a=1, b=0 → GCD = 1

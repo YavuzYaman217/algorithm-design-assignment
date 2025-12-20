@@ -1,0 +1,23 @@
+Fake Coin Problem Algorithm
+============================
+
+Description:
+The fake coin problem involves finding a lighter (fake) coin among a collection of identical coins using a balance scale. In this implementation, coins are represented as an array where genuine coins have weight 1 and the fake coin has weight 0. The algorithm divides the coins into three groups, compares the sums to identify which group contains the fake coin, then returns its index.
+
+Time Complexity: O(n) for single weighing with sum comparison
+Space Complexity: O(n) for storing groups
+
+Algorithm Steps:
+1. Divide the array into three groups of equal size (or nearly equal)
+   - Group 1: arr[0 : n/3]
+   - Group 2: arr[n/3 : 2n/3]
+   - Group 3: arr[2n/3 : n]
+2. Calculate sum of Group 1 and Group 2
+3. Compare sums:
+   - If sum1 < sum2: fake coin is in Group 1
+   - If sum2 < sum1: fake coin is in Group 2
+   - If sum1 == sum2: fake coin is in Group 3
+4. Find the position of 0 (fake coin) in the identified group
+5. Calculate and return the original index by adding the offset
+
+Note: This approach uses weight comparison rather than a traditional balance scale.

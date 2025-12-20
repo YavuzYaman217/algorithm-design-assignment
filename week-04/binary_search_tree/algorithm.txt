@@ -1,0 +1,25 @@
+Binary Search Tree (BST) Algorithm
+====================================
+
+Description:
+A Binary Search Tree is a node-based data structure where each node has at most two children (left and right). The BST property states that for any node, all values in its left subtree are less than the node's value, and all values in its right subtree are greater than the node's value. This property enables efficient searching, insertion, and deletion operations.
+
+Time Complexity:
+- Insert: O(log n) average, O(n) worst case
+- Search: O(log n) average, O(n) worst case
+- Inorder Traversal: O(n)
+
+Space Complexity: O(n)
+
+Insert Algorithm Steps:
+1. If root is None, create new node with key and return it
+2. If key equals root's value, return root (no duplicates)
+3. If key > root's value, recursively insert in right subtree
+4. If key < root's value, recursively insert in left subtree
+5. Return root
+
+Inorder Traversal (Left-Root-Right):
+1. Recursively traverse left subtree
+2. Process current node
+3. Recursively traverse right subtree
+(This produces sorted output for BST)

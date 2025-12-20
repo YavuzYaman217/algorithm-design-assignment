@@ -1,0 +1,42 @@
+Minimum Pair Distance Test Cases
+==================================
+
+Test Case 1: Example from code
+Input: [[-1, -2], [0, 0], [1, 2], [2, 3]]
+Expected Output: 1.4142135623730951 (√2)
+
+Test Case 2: Points on a line
+Input: [[0, 0], [1, 0], [2, 0], [3, 0]]
+Expected Output: 1.0
+
+Test Case 3: Points at corners of square
+Input: [[0, 0], [1, 0], [0, 1], [1, 1]]
+Expected Output: 1.0
+
+Test Case 4: Two points only
+Input: [[0, 0], [3, 4]]
+Expected Output: 5.0
+
+Test Case 5: Overlapping points (same location)
+Input: [[1, 1], [1, 1], [5, 5]]
+Expected Output: 0.0
+
+Test Case 6: Points in diagonal line
+Input: [[0, 0], [1, 1], [2, 2], [3, 3]]
+Expected Output: 1.4142135623730951 (√2)
+
+Test Case 7: Close and far points
+Input: [[0, 0], [0.5, 0.5], [100, 100]]
+Expected Output: 0.7071067811865476 (√0.5)
+
+Test Case 8: Triangle vertices
+Input: [[0, 0], [4, 0], [2, 3]]
+Expected Output: 3.605551275463989 (distance from (2,3) to (4,0))
+
+Test Case 9: Negative coordinates
+Input: [[-5, -5], [-3, -3], [0, 0]]
+Expected Output: 2.8284271247461903 (√8)
+
+Test Case 10: Random scattered points
+Input: [[1, 2], [4, 5], [7, 8], [2, 3]]
+Expected Output: 1.4142135623730951 (√2, between (1,2) and (2,3))

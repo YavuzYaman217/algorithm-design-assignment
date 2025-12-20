@@ -1,0 +1,19 @@
+Binary Search Insertion Sort Algorithm
+========================================
+
+Description:
+Binary Search Insertion Sort is an optimization of the traditional insertion sort algorithm. Instead of using linear search to find the correct position for each element, it uses binary search to find the insertion position more efficiently. However, the shifting of elements still requires O(n) time, so the overall complexity remains O(n²).
+
+Time Complexity: O(n²)
+Space Complexity: O(1)
+
+Algorithm Steps:
+1. Start from the second element (index 1)
+2. For each element at position i:
+   - Store the current element as key
+   - Use binary search to find the correct position (loc) in the sorted portion [0...i-1]
+   - Shift all elements from loc to i-1 one position to the right
+   - Insert the key at position loc
+3. Repeat until all elements are sorted
+
+Binary Search returns the position where the key should be inserted to maintain sorted order.

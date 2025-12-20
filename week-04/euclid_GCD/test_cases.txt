@@ -1,0 +1,42 @@
+Euclidean GCD Test Cases
+=========================
+
+Test Case 1: Co-prime numbers
+Input: a = 12, b = 7
+Expected Output: 1
+
+Test Case 2: One divides the other
+Input: a = 20, b = 5
+Expected Output: 5
+
+Test Case 3: Same numbers
+Input: a = 15, b = 15
+Expected Output: 15
+
+Test Case 4: Large numbers with common factor
+Input: a = 48, b = 18
+Expected Output: 6
+
+Test Case 5: One number is zero
+Input: a = 42, b = 0
+Expected Output: 42
+
+Test Case 6: Prime numbers
+Input: a = 17, b = 19
+Expected Output: 1
+
+Test Case 7: Powers of 2
+Input: a = 64, b = 32
+Expected Output: 32
+
+Test Case 8: Fibonacci numbers
+Input: a = 89, b = 55
+Expected Output: 1
+
+Test Case 9: Large GCD
+Input: a = 1071, b = 462
+Expected Output: 21
+
+Test Case 10: Consecutive numbers
+Input: a = 100, b = 99
+Expected Output: 1

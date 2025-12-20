@@ -1,0 +1,23 @@
+Insertion Sort Algorithm
+=========================
+
+Description:
+Insertion sort is a simple sorting algorithm that builds the final sorted array one element at a time. It iterates through the input array, and for each element, it finds the correct position in the sorted portion of the array and inserts it there. It works similarly to how people sort playing cards in their hands.
+
+Time Complexity: O(n²) worst/average case, O(n) best case
+Space Complexity: O(1)
+
+Algorithm Steps:
+1. Start from the second element (index 1)
+2. For each element at position i:
+   - Store the current element as key
+   - Set j = i - 1
+   - While j >= 0 and key < arr[j]:
+     * Shift arr[j] one position to the right (arr[j+1] = arr[j])
+     * Decrement j
+   - Insert key at position j+1
+3. Repeat until all elements are processed
+
+The algorithm maintains two subarrays:
+- Sorted subarray: arr[0...i-1]
+- Unsorted subarray: arr[i...n-1]

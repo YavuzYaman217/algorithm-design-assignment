@@ -1,0 +1,27 @@
+Minimum Distance Between Pair of Points Algorithm
+==================================================
+
+Description:
+This algorithm finds the minimum Euclidean distance between any two points in a set of 2D points. The brute force approach compares every pair of points and calculates their distance, keeping track of the minimum distance found. This is a straightforward but not the most efficient solution for large datasets.
+
+Time Complexity: O(n²)
+Space Complexity: O(1)
+
+Algorithm Steps:
+1. Initialize min_dist to infinity
+2. For each point i from 0 to n-1:
+   - For each point j from i+1 to n-1:
+     * Calculate Euclidean distance between points[i] and points[j]
+     * If distance < min_dist, update min_dist
+3. Return min_dist
+
+Distance Formula:
+For two points p1(x1, y1) and p2(x2, y2):
+distance = √[(x2-x1)² + (y2-y1)²]
+
+Example: [(-1,-2), (0,0), (1,2), (2,3)]
+Compare all pairs:
+- (-1,-2) to (0,0): √5 ≈ 2.236
+- (-1,-2) to (1,2): √20 ≈ 4.472
+- (0,0) to (1,2): √5 ≈ 2.236
+- (1,2) to (2,3): √2 ≈ 1.414 ← minimum

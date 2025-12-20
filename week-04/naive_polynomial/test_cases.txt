@@ -1,0 +1,42 @@
+Naive Polynomial Evaluation Test Cases
+========================================
+
+Test Case 1: Simple polynomial
+Input: poly = [1, 2, 3], x = 2
+Expected Output: 17 (1 + 2*2 + 3*4)
+
+Test Case 2: Constant polynomial
+Input: poly = [5], x = 10
+Expected Output: 5
+
+Test Case 3: Linear polynomial
+Input: poly = [2, 3], x = 4
+Expected Output: 14 (2 + 3*4)
+
+Test Case 4: Evaluate at x = 0
+Input: poly = [1, 2, 3, 4], x = 0
+Expected Output: 1
+
+Test Case 5: Evaluate at x = 1
+Input: poly = [1, 2, 3, 4], x = 1
+Expected Output: 10 (1 + 2 + 3 + 4)
+
+Test Case 6: Negative x value
+Input: poly = [1, -2, 3], x = -1
+Expected Output: 6 (1 + (-2)*(-1) + 3*1)
+
+Test Case 7: Higher degree polynomial
+Input: poly = [1, 0, 0, 0, 1], x = 2
+Expected Output: 17 (1 + 0 + 0 + 0 + 1*16)
+
+Test Case 8: All coefficients are 1
+Input: poly = [1, 1, 1, 1], x = 2
+Expected Output: 15 (1 + 2 + 4 + 8)
+
+Test Case 9: Large x value
+Input: poly = [5, 3, 2], x = 10
+Expected Output: 235 (5 + 30 + 200)
+
+Test Case 10: Zero coefficients
+Input: poly = [10, 0, 5, 0], x = 3
+Expected Output: 55 (10 + 0 + 5*9 + 0)

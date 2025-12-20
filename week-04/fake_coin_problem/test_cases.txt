@@ -1,0 +1,43 @@
+Fake Coin Problem Test Cases
+==============================
+
+Test Case 1: Fake coin in first group
+Input: [0, 1, 1, 1, 1, 1, 1, 1, 1]
+Expected Output: 0
+
+Test Case 2: Fake coin in second group
+Input: [1, 1, 1, 0, 1, 1, 1, 1, 1]
+Expected Output: 3
+
+Test Case 3: Fake coin in third group
+Input: [1, 1, 1, 1, 1, 0, 1, 1, 1]
+Expected Output: 5
+
+Test Case 4: Small array - fake in first position
+Input: [0, 1, 1]
+Expected Output: 0
+
+Test Case 5: Small array - fake in middle
+Input: [1, 0, 1]
+Expected Output: 1
+
+Test Case 6: Small array - fake in last position
+Input: [1, 1, 0]
+Expected Output: 2
+
+Test Case 7: Six coins - fake in second group
+Input: [1, 1, 1, 1, 0, 1]
+Expected Output: 4
+
+Test Case 8: Nine coins - fake at end
+Input: [1, 1, 1, 1, 1, 1, 1, 1, 0]
+Expected Output: 8
+
+Test Case 9: Twelve coins - fake in middle
+Input: [1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1]
+Expected Output: 5
+
+Test Case 10: Three coins - each position
+Input: [0, 1, 1] → 0
+Input: [1, 0, 1] → 1
+Input: [1, 1, 0] → 2

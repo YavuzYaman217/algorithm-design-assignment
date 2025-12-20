@@ -1,0 +1,50 @@
+Russian Peasant Multiplication Test Cases
+===========================================
+
+Test Case 1: Example from code
+Input: a = 15, b = 3
+Expected Output: 45
+
+Test Case 2: Multiply by 1
+Input: a = 42, b = 1
+Expected Output: 42
+
+Test Case 3: Both numbers small
+Input: a = 7, b = 8
+Expected Output: 56
+
+Test Case 4: Power of 2
+Input: a = 16, b = 4
+Expected Output: 64
+
+Test Case 5: Multiply by 2
+Input: a = 25, b = 2
+Expected Output: 50
+
+Test Case 6: Large numbers
+Input: a = 123, b = 45
+Expected Output: 5535
+
+Test Case 7: One number is even, one is odd
+Input: a = 18, b = 7
+Expected Output: 126
+
+Test Case 8: Both numbers odd
+Input: a = 9, b = 11
+Expected Output: 99
+
+Test Case 9: Small prime numbers
+Input: a = 13, b = 17
+Expected Output: 221
+
+Test Case 10: Multiplication by power of 2
+Input: a = 37, b = 8
+Expected Output: 296
+
+Test Case 11: Identity check
+Input: a = 100, b = 1
+Expected Output: 100
+
+Test Case 12: Symmetric multiplication
+Input: a = 12, b = 12
+Expected Output: 144

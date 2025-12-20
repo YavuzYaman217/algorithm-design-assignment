@@ -1,0 +1,27 @@
+Russian Peasant Multiplication Algorithm
+==========================================
+
+Description:
+Russian Peasant Multiplication (also known as Ancient Egyptian Multiplication) is a method to multiply two numbers using only addition, doubling, and halving. The algorithm is based on the binary representation of numbers. It repeatedly halves one number and doubles the other, adding the doubled value to the result whenever the halved number is odd.
+
+Time Complexity: O(log b)
+Space Complexity: O(1)
+
+Algorithm Steps:
+1. Initialize sum = 0
+2. While b >= 1:
+   - If b is even: double a (a = a * 2)
+   - If b is odd: add a to sum, then decrement b by 1
+   - Halve b (b = b // 2)
+3. Add final value of a to sum
+4. Return sum
+
+Mathematical Basis:
+a × b = a × (b₀ + 2b₁ + 4b₂ + ...)
+where b₀, b₁, b₂ are bits of b in binary
+
+Example: 15 × 3
+b=3 (odd): sum=15, b=2, a=15
+b=2 (even): a=30, b=1
+b=1 (odd): sum=15+30=45, b=0
+Final: sum + 30 = 45

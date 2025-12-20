@@ -7,6 +7,42 @@ def naive_polynomial(poly,x):
         p = p + poly[i]*power
     return p
 
-points,x = ([1,2,3],2)
-res = naive_polynomial(points,x)
-print(res)
+# Test Case 1: Simple polynomial
+poly, x = [1, 2, 3], 2
+print(f"Test 1 - P({x})={poly}: {naive_polynomial(poly, x)} (Expected: 17)")
+
+# Test Case 2: Constant polynomial
+poly, x = [5], 10
+print(f"Test 2 - P({x})={poly}: {naive_polynomial(poly, x)} (Expected: 5)")
+
+# Test Case 3: Linear polynomial
+poly, x = [2, 3], 4
+print(f"Test 3 - P({x})={poly}: {naive_polynomial(poly, x)} (Expected: 14)")
+
+# Test Case 4: Evaluate at x = 0
+poly, x = [1, 2, 3, 4], 0
+print(f"Test 4 - P({x})={poly}: {naive_polynomial(poly, x)} (Expected: 1)")
+
+# Test Case 5: Evaluate at x = 1
+poly, x = [1, 2, 3, 4], 1
+print(f"Test 5 - P({x})={poly}: {naive_polynomial(poly, x)} (Expected: 10)")
+
+# Test Case 6: Negative x value
+poly, x = [1, -2, 3], -1
+print(f"Test 6 - P({x})={poly}: {naive_polynomial(poly, x)} (Expected: 6)")
+
+# Test Case 7: Higher degree polynomial
+poly, x = [1, 0, 0, 0, 1], 2
+print(f"Test 7 - P({x})={poly}: {naive_polynomial(poly, x)} (Expected: 17)")
+
+# Test Case 8: All coefficients are 1
+poly, x = [1, 1, 1, 1], 2
+print(f"Test 8 - P({x})={poly}: {naive_polynomial(poly, x)} (Expected: 15)")
+
+# Test Case 9: Large x value
+poly, x = [5, 3, 2], 10
+print(f"Test 9 - P({x})={poly}: {naive_polynomial(poly, x)} (Expected: 235)")
+
+# Test Case 10: Zero coefficients
+poly, x = [10, 0, 5, 0], 3
+print(f"Test 10 - P({x})={poly}: {naive_polynomial(poly, x)} (Expected: 55)")
